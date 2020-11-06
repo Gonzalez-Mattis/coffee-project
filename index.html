@@ -3,39 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Coffee!</h1>
-    <hr>
 
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <div id="coffees"></div>
+
+        <div style="background: url(coffee-mug.png)" class="jumbotron bg-cover text-white">
+            <div class="container py-5 text-center">
+                <h1 class=" font-weight-bold">Coffee!</h1>
+            </div>
         </div>
+        <hr>
+
+   <div class="container">
+        <div class="row">
+
+        <!-- Coffee Names and Brews -->
             <div class="col-12 col-md-6">
-
-        <form>
-            <label for="roast-selection">Roast</label>
-            <select class ="selection" id="roast-selection">
-                <option>all</option>
-                <option>light</option>
-                <option>medium</option>
-                <option>dark</option>
-            </select>
-
-            <div>
-                <label for="coffee-selector">Coffee Name</label>
-                <input class="selection" id="coffee-selector" class="form-control" type="text" placeholder="Default input">
+                <div id="coffees"></div>
             </div>
+        <!-- Coffee Names ans Brews End -->
 
-            <input id="submit" type="submit"/>
-        </form>
+        <!-- Selectors Form -->
+            <div class="col-12 col-md-6" id="form-alignment">
+                <form>
+
+                <!--Dropdowm-->
+                    <label for="roast-selection">Roast</label><br>
+                    <select class="form-control selection" id="roast-selection">
+                        <option>all</option>
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
+                    </select>
+                <!-- Dropdown End -->
+
+                <!-- Coffee Names Text intput -->
+                    <div>
+                        <label for="coffee-selector" >Coffee Name</label><br>
+                        <input class="selection form-control" onkeydown="updateCoffees()" id="coffee-selector" type="text" placeholder="Default input">
+                    </div>
+                <!-- Coffee Names Text input End -->
+
+                    <input class="form-control btn-style" id="submit" type="submit"/>
+                </form>
+
+                <h2>Add A Coffee</h2>
+
+                <form>
+
+                    <!--Dropdowm 2 Add Coffee-->
+                    <label for="roast-selection">Roast</label><br>
+                    <select class="form-control selection" id="new-roast-selection">
+                        <option>all</option>
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
+                    </select>
+                    <!-- Dropdown End -->
+
+                    <!-- Coffee Names Text intput -->
+                    <div>
+                        <label for="coffee-selector" >Coffee Name</label><br>
+                        <input class="selection form-control" id="new-coffee-selector" type="text" placeholder="Default input">
+                    </div>
+                    <!-- Coffee Names Text input End -->
+
+                    <input class="form-control btn-style" id="new-submit" type="submit"/>
+                </form>
             </div>
+        <!--Selectors Form End -->
+        </div>
     </div>
-</div>
 
 
 
