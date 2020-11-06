@@ -7,7 +7,7 @@ improvements to it.
 ## Setup
 
 1. Create a Github organization and add your teammate.
-1. Fork this repository (Click on the "Fork" button on the top right of this
+1. Fork this repository (Click on the "Fork" button on the top right of this.
    page) and select the new organization as a destination.
 1. Clone the forked repository from your organization.
 1. Open up the HTML file and check out the existing application.
