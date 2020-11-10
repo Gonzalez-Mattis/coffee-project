@@ -5,29 +5,31 @@
     <title></title>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-
-        <div style="background: url(coffee-mug.png)" class="jumbotron bg-cover text-white">
+     <!--Jumbotron -->
+        <div style="background: url(images/coffee-mug.png)" class="jumbotron jumbo-style bg-cover text-white">
             <div class="container py-5 text-center">
                 <h1 class=" font-weight-bold">Coffee!</h1>
             </div>
         </div>
+     <!-- Jumbotron End -->
         <hr>
 
-   <div class="container">
+    <div class="container">
         <div class="row">
 
         <!-- Coffee Names and Brews -->
-            <div class="col-12 col-md-6">
+            <div class="col-xs-12 col-md-6">
                 <div id="coffees"></div>
             </div>
         <!-- Coffee Names ans Brews End -->
 
         <!-- Selectors Form -->
-            <div class="col-12 col-md-6" id="form-alignment">
+            <div class="col-xs-12 col-md-6" id="form-alignment">
                 <form>
 
                 <!--Dropdowm-->
@@ -56,7 +58,7 @@
 
                     <!--Dropdowm 2 Add Coffee-->
                     <label for="roast-selection">Roast</label><br>
-                    <select class="form-control selection" id="new-roast-selection">
+                    <select class="form-control selection" id="new-roast-selector">
                         <option>all</option>
                         <option>light</option>
                         <option>medium</option>

@@ -2,7 +2,7 @@
 
 function renderCoffee(coffee) {
     var html = '<div class="coffee">';
-    html += '<h3 class="id">' + coffee.id + '</h3>';
+    html += '<h3 class="order">' + coffee.id + '</h3>';
     html += '<h3>' + coffee.name + '</h3>';
     html += '<p>' + coffee.roast + '</p>';
     html += '</div>';
@@ -57,6 +57,9 @@ var coffeeDisplay = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 var userTextCoffeeSelection = document.querySelector('#coffee-selector');
+var addNewCoffee = document.querySelector('#new-coffee-selector');
+var addNewRoast = document.querySelector('#new-roast-selector');
+
 
 
 
