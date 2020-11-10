@@ -1,7 +1,7 @@
 html, body {
     width: 100%;
     height: 100%;
-    background-image: url(background-image1.png);
+    background-image: url(images/background-image1.png);
 }
 
 
@@ -15,12 +15,7 @@ h1 {
     font-family: 'Rock Salt', cursive;
     -webkit-text-stroke: .5px black;
     text-stroke: .5px black;
-
-
 }
-/*div{*/
-/*    display: inline-block;*/
-/*}*/
 
 
 #coffees {
@@ -55,14 +50,14 @@ input[type=text], textarea {
     -moz-transition: all 0.30s ease-in-out;
     -o-transition: all 0.30s ease-in-out;
     outline: none;
-    padding: 3px 0px 3px 3px;
-    margin: 5px 1px 3px 0px;
+    padding: 3px 3px 3px;
+    margin: 5px 1px 3px;
     border: 1px solid #DDDDDD;
 }
 input[type=text]:focus, textarea:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    padding: 3px 0px 3px 3px;
-    margin: 5px 1px 3px 0px;
+    padding: 3px 3px 3px;
+    margin: 5px 1px 3px;
     border: 1px solid rgba(81, 203, 238, 1);
 }
 
@@ -76,8 +71,8 @@ input[type=text]:focus, textarea:focus {
 
 .btn-style:hover {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    padding: 3px 0px 3px 3px;
-    margin: 5px 1px 3px 0px;
+    padding: 3px 3px 3px;
+    margin: 5px 1px 3px ;
     border: 1px solid rgba(81, 203, 238, 1);
 }
 
@@ -96,3 +91,18 @@ h2 {
     background-size: cover !important;
 }
 
+.jumbo-style {
+    margin-bottom: 0px;
+}
+
+.navbar {
+    background-color: #bc6c25;
+    box-shadow: inset 0 0 5px 5px rgba(10,10,10, .3);
+}
+
+a {
+    font-weight: bold;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
