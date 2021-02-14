@@ -40,19 +40,14 @@ function updateCoffees(e) {
 }
 
 
-function addCoffee(){
+function addCoffee(e){
+// Allow a user to add a new coffe and roast to the list of coffees
+    e.preventDefault();
     var selectedRoast = addNewRoast.value;
     var selectedUserTextCoffee = addNewCoffee.value.toLowerCase();
-
-    coffees.forEach(function(coffee){
-        if(selectedRoast !== null && selectedUserTextCoffee !== null){
-            selectedRoast === coffee.roast;
-            selectedUserTextCoffee === coffee.name;
-            coffees.push(coffee);
-        }
-
-    });
-    coffeeDisplay.innerHTML = renderCoffees(coffees);
+    var addNewCoffees ={id: coffees.length + 1, name: selectedUserTextCoffee, roast: selectedRoast};
+    coffees.push(addNewCoffees);
+    coffeeDisplay.innerHTML = renderCoffees(coffees)
 
 }
 
