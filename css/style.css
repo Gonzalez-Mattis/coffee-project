@@ -108,3 +108,24 @@ a {
 }
 
 
+.card-image-top {
+    background-image: url(../images/coffee-mug.png);
+
+}
+
+.stick{
+    position: sticky;
+    top: 0;
+}
+
+.stick-2 {
+    position: sticky;
+    top: 250px;
+}
+
+.stick-3 {
+    position: sticky;
+    top:300px;
+}
+
+

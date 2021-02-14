@@ -2,11 +2,11 @@
 
 function renderCoffee(coffee) {
     var html = '<div class="coffee">';
-    html += '<div class="card" style="width: 18rem;">'
-    html += '<img src="..." class="card-img-top" alt="...">\n'
-    html += '<div class="card-body">'
+    html += '<div class="card" style="width: 300px;">';
+    html += '<img src="images/coffee-music.png" width=236px height=236px class="card-img-top">';
+    html += '<div class="card-body">';
     html += '<h5 class="order">' + coffee.id + '</h5>';
-    html += '<h3 class="card-title">' + coffee.name + '</h3>';
+    html += '<h5 class="card-title">' + coffee.name + '</h5>';
     html += '<p class="card-text">' + coffee.roast + '</p>';
     html += '</div>';
     html += '</div>';
