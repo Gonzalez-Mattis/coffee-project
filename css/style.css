@@ -131,4 +131,8 @@ a {
 
 .card {
     box-shadow: 2px 7px 16px -3px rgba(0,0,0,0.69);
+    background-color: #0a043c;
+    opacity: 80%;
+    font-family: 'Rock Salt', cursive;
 }
+

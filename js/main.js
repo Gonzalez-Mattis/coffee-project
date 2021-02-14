@@ -6,7 +6,7 @@ function renderCoffee(coffee) {
     html += '<img src="images/coffee-music.png" width=236px height=236px class="card-img-top">';
     html += '<div class="card-body">';
     html += '<h5 class="order">' + coffee.id + '</h5>';
-    html += '<h5 class="card-title">' + coffee.name + '</h5>';
+    html += '<h5 class="card-title text-white">' + coffee.name + '</h5>';
     html += '<p class="card-text">' + coffee.roast + '</p>';
     html += '</div>';
     html += '</div>';
